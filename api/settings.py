@@ -26,6 +26,7 @@ SECRET_KEY = '*!c+nzn2+51t8!dnja@l7^t77n$sqglp6r00f3&o4zo*7fj&a^'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'localhost',
     'gentle-reef-57771.herokuapp.com'
 ]
 
@@ -58,6 +59,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'api.urls'
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
+    'http://localhost:8000',
     'https://vterebenin.github.io'
 )
 
