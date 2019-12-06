@@ -56,6 +56,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'api.urls'
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
+    'https://vterebenin.github.io/learning-nuxt/'
 )
 
 TEMPLATES = [
@@ -125,7 +126,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 # add the following just below STATIC_URL
 MEDIA_URL = '/media/' # add this
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # add this
+
