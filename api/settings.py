@@ -58,7 +58,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'api.urls'
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
-    'https://vterebenin.github.io/learning-nuxt/'
+    'https://vterebenin.github.io'
 )
 
 TEMPLATES = [
