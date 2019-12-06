@@ -25,7 +25,9 @@ SECRET_KEY = '*!c+nzn2+51t8!dnja@l7^t77n$sqglp6r00f3&o4zo*7fj&a^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'gentle-reef-57771.herokuapp.com'
+]
 
 
 # Application definition
