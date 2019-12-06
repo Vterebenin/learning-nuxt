@@ -49,10 +49,11 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: process.env.BASE_URL || "http://localhost:8000/api"
+    // baseURL: process.env.BASE_URL || "http://localhost:8000/api"
+    baseURL: 'https://gentle-reef-57771.herokuapp.com/api'
   },
   router: {
-    base: '/learning-nuxt/'
+    base: '/learning-nuxt'
   },
 
   /*

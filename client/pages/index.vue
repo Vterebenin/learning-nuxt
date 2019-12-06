@@ -16,6 +16,9 @@ export default {
       title: "Home page"
     };
   },
+  mounted() {
+    console.log(process.env.BASE_URL)
+  }
 };
 </script>
 <style>
@@ -26,7 +29,7 @@ header {
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.4)
     ),
-    url("/images/banner.jpg");
+    url("/learning-nuxt/images/banner.jpg");
 
   background-position: center;
   background-size: cover;
