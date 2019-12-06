@@ -3,12 +3,12 @@
     <div class="row">
       <div class="col-12 text-right mb-4">
         <div class="d-flex justify-content-between">
-          <h3>La Recipes</h3>
-          <nuxt-link to="/recipes/add" class="btn btn-info">Add Recipe</nuxt-link>
+          <h3>Типа рецепты</h3>
+          <nuxt-link to="/recipes/add" class="btn btn-info">Добавить рецепт</nuxt-link>
         </div>
       </div>
       <template v-for="recipe in recipes">
-        <div :key="recipe.id" class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div :key="recipe.id" class="col-lg-4 col-md-4 col-sm-6 mb-4">
           <recipe-card :onDelete="deleteRecipe" :recipe="recipe"></recipe-card>
         </div>
       </template>

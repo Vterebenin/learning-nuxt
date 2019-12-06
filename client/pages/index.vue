@@ -1,10 +1,10 @@
 <template>
   <header>
     <div class="text-box">
-      <h1>La Recipes 😋</h1>
-      <p class="mt-3">Recipes for the meals we love ❤️ ️</p>
+      <h1>Типа рецепты 😋</h1>
+      <p class="mt-3">Типа здесь твои любимые рецепты ❤️ ️</p>
       <nuxt-link class="btn btn-outline btn-large btn-info" to="/recipes">
-        View Recipes <span class="ml-2">&rarr;</span>
+        Посмотреть рецепты <span class="ml-2">&rarr;</span>
       </nuxt-link>
     </div>
   </header>
@@ -27,6 +27,7 @@ header {
       rgba(0, 0, 0, 0.4)
     ),
     url("/images/banner.jpg");
+
   background-position: center;
   background-size: cover;
   position: relative;

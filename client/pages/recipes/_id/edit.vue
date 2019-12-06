@@ -11,43 +11,43 @@
       <div class="col-md-4">
         <form @submit.prevent="submitRecipe">
           <div class="form-group">
-            <label for>Recipe Name</label>
+            <label for>Название рецепта</label>
             <input type="text" class="form-control" v-model="recipe.name" >
           </div>
           <div class="form-group">
-            <label for>Ingredients</label>
+            <label for>Ингридиенты</label>
             <input type="text" v-model="recipe.ingredients" class="form-control" name="Ingredients" >
           </div>
           <div class="form-group">
-            <label for>Food picture</label>
+            <label for>Фотография еды</label>
             <input type="file" @change="onFileChange">
           </div>
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <label for>Difficulty</label>
+                <label for>Сложность</label>
                 <select v-model="recipe.difficulty" class="form-control" >
-                  <option value="Easy">Easy</option>
-                  <option value="Medium">Medium</option>
-                  <option value="Hard">Hard</option>
+                  <option value="Easy">Легко</option>
+                  <option value="Medium">Средне</option>
+                  <option value="Hard">Тяжело</option>
                 </select>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
                 <label for>
-                  Prep time
-                  <small>(minutes)</small>
+                  Время
+                  <sub>(в минутах)</sub>
                 </label>
                 <input type="text" v-model="recipe.prep_time" class="form-control" name="Ingredients" >
               </div>
             </div>
           </div>
           <div class="form-group mb-3">
-            <label for>Preparation guide</label>
+            <label for>Рецепт приготовления</label>
             <textarea v-model="recipe.prep_guide" class="form-control" rows="8"></textarea>
           </div>
-          <button type="submit" class="btn btn-success">Save</button>
+          <button type="submit" class="btn btn-success">Сохранить</button>
         </form>
       </div>
     </div>

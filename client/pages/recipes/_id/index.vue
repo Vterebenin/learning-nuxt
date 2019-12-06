@@ -14,13 +14,13 @@
       </div>
       <div class="col-md-6">
         <div class="recipe-details">
-          <h4>Ingredients</h4>
+          <h4>Ингридиенты</h4>
           <p>{{ recipe.ingredients }}</p>
-          <h4>Preparation time ⏱</h4>
-          <p>{{ recipe.prep_time }} mins</p>
-          <h4>Difficulty</h4>
+          <h4>Время на приготовление</h4>
+          <p>{{ recipe.prep_time }} мин.</p>
+          <h4>Сложность</h4>
           <p>{{ recipe.difficulty }}</p>
-          <h4>Preparation guide</h4>
+          <h4>Рецепт приготовления</h4>
           <textarea class="form-control" rows="10" v-html="recipe.prep_guide" disabled />
         </div>
       </div>
