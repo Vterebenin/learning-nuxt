@@ -51,6 +51,10 @@ export default {
   axios: {
     baseURL: process.env.BASE_URL || "http://localhost:8000/api"
   },
+  router: {
+    base: '/learning-nuxt/'
+  },
+
   /*
   ** Build configuration
   */
